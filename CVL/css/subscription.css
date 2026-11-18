@@ -1,0 +1,11 @@
+.sbody{max-width:900px}
+.status{padding:1.2rem 1.4rem;margin:1rem 0 1.5rem}
+.status b{display:block;font-size:1.4rem}
+.status p{color:var(--muted)}
+.sbody h2{margin:1.8rem 0 .8rem;font-size:1.3rem}
+.pay-info,.wait{padding:1.4rem;margin:1.2rem 0}
+.pre{white-space:pre-wrap;color:var(--muted)}
+.pay-form{padding:1.5rem;display:grid;gap:1rem;margin:1.2rem 0}
+.pay-form .btn{justify-self:start}
+.lrow small{display:block}
+.plan.picked{border-color:var(--cyan);box-shadow:0 0 30px rgba(34,211,238,.18)}

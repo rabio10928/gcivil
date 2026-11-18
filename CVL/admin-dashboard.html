@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>لوحة الإدارة | Civil Academy 3D</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/global.css"><link rel="stylesheet" href="css/home.css"><link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/admin.css">
+<script src="js/theme.js"></script>
+</head>
+<body>
+<button id="menuBtn" class="menu-btn glass" aria-label="القائمة">القائمة</button>
+<div class="app">
+  <aside id="side" class="side glass">
+    <a class="logo" href="index.html" data-logo-keep>لوحة الإدارة</a>
+    <nav id="sideNav" aria-label="قائمة المدير">
+      <a href="#dashboard" data-view="dashboard">لوحة المعلومات</a>
+      <a href="#years" data-view="years">إدارة السنوات</a>
+      <a href="#domains" data-view="domains">إدارة المجالات</a>
+      <a href="#units" data-view="units">إدارة الوحدات</a>
+      <a href="#lessons" data-view="lessons">إدارة الدروس</a>
+      <a href="#students" data-view="students">الطلاب</a>
+      <a href="#plans" data-view="plans">خطط الاشتراك</a>
+      <a href="#payments" data-view="payments">إدارة المدفوعات</a>
+      <a href="#subscriptions" data-view="subscriptions">إدارة الاشتراكات</a>
+      <a href="#site" data-view="site">هوية الموقع والمحتوى</a>
+      <a href="#settings" data-view="settings">الإعدادات</a>
+      <a href="student-dashboard.html">عرض كطالب</a>
+    </nav>
+    <span data-theme-slot></span>
+    <button id="logoutBtn" class="btn ghost" type="button">تسجيل الخروج</button>
+  </aside>
+  <main id="view" class="main" aria-live="polite"><p class="state">جارٍ التحميل...</p></main>
+</div>
+
+<dialog id="fdlg"><form id="fform"></form></dialog>
+<dialog id="cdlg"><form method="dialog"><p id="ctext"></p><div class="acts"><button class="btn danger" value="yes">تأكيد</button><button class="btn ghost" value="no">إلغاء</button></div></form></dialog>
+<dialog id="pdlg"><div class="acts"><button class="btn ghost sm" type="button" data-close>إغلاق المعاينة</button></div><iframe id="pframe" sandbox="allow-scripts" title="معاينة الدرس"></iframe></dialog>
+<div id="toast" class="toast" role="status"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/supabase.js"></script>
+<script src="js/site.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/guards.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/uploads.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/lessons.js"></script>
+<script src="js/billing.js"></script>
+<script src="js/plans.js"></script>
+<script src="js/site-admin.js"></script>
+</body></html>

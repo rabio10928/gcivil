@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Civil Engineering Academy 3D | منصة الهندسة المدنية</title>
+<meta name="description" content="منصة تعليمية تفاعلية للهندسة المدنية: دروس HTML وفيديو وPDF ومحاكاة ثلاثية الأبعاد.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/home.css">
+<script src="js/theme.js"></script>
+</head>
+<body>
+<canvas id="bg3d" aria-hidden="true"></canvas>
+
+<header class="nav glass">
+  <a class="logo" href="#top">Civil Academy 3D</a>
+  <nav aria-label="التنقل الرئيسي">
+    <a href="#years">السنوات</a><a href="#features">المميزات</a><a href="#pricing">الاشتراكات</a><a href="#contact">التواصل</a>
+  </nav>
+  <div class="nav-actions"><span data-theme-slot></span><a id="navLogin" class="btn ghost" href="login.html">دخول</a><a class="btn" href="register.html">ابدأ مجاناً</a></div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <h1 data-site="hero_title">اكتشف عالم الهندسة المدنية</h1>
+      <p data-site="hero_text">منصة تعليمية تفاعلية تجمع بين الدروس النظرية والتطبيقات العملية والمحاكاة ثلاثية الأبعاد.</p>
+      <div class="cta">
+        <a class="btn lg" href="register.html">ابدأ التعلم</a>
+        <a class="btn ghost lg" href="#years">اكتشف المنصة</a>
+      </div>
+      <p class="note" data-trial-line><span data-trial>7</span> أيام تجربة مجانية بكل المحتوى، بدون بطاقة بنكية.</p>
+    </div>
+  </section>
+
+  <section id="years" class="section">
+    <h2 data-site="years_title">اختر سنتك الدراسية</h2>
+    <p class="lead">كل سنة مقسمة إلى مجالات ووحدات ودروس.</p>
+    <div class="grid">
+      <a class="card glass" data-tilt data-year="1" href="academic-year.html?year=1">
+        <span class="num">1</span><h3>السنة الأولى</h3><p>الأسس: المفاهيم الأولى للبناء والرسم والمواد.</p>
+        <ul class="stats"><li>المجالات <b data-stat="domains">—</b></li><li>الوحدات <b data-stat="units">—</b></li><li>الدروس <b data-stat="lessons">—</b></li></ul>
+        <span class="go">ادخل</span>
+      </a>
+      <a class="card glass" data-tilt data-year="2" href="academic-year.html?year=2">
+        <span class="num">2</span><h3>السنة الثانية</h3><p>التعمق: حساب الهياكل وتقنيات الأشغال.</p>
+        <ul class="stats"><li>المجالات <b data-stat="domains">—</b></li><li>الوحدات <b data-stat="units">—</b></li><li>الدروس <b data-stat="lessons">—</b></li></ul>
+        <span class="go">ادخل</span>
+      </a>
+      <a class="card glass" data-tilt data-year="3" href="academic-year.html?year=3">
+        <span class="num">3</span><h3>السنة الثالثة</h3><p>التطبيق: البناء والأشغال العمومية والتجارب المخبرية.</p>
+        <ul class="stats"><li>المجالات <b data-stat="domains">—</b></li><li>الوحدات <b data-stat="units">—</b></li><li>الدروس <b data-stat="lessons">—</b></li></ul>
+        <span class="go">ادخل</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <h2 data-site="features_title">درس واحد، ثلاث طرق للفهم</h2>
+    <div class="grid feat">
+      <div class="glass"><h3>درس HTML تفاعلي</h3><p>شروحات ورسوم تتفاعل معها مباشرة.</p></div>
+      <div class="glass"><h3>فيديو تعليمي</h3><p>مشغل داخل نفس صفحة الدرس.</p></div>
+      <div class="glass"><h3>ملف PDF</h3><p>اقرأ الملخص أو حمّله عند السماح بذلك.</p></div>
+      <div class="glass"><h3>متابعة التقدم</h3><p>أكمل الدروس وأضف المفضلة وراقب نسبة إنجازك.</p></div>
+      <div class="glass"><h3>محتوى محمي</h3><p>الدروس متاحة فقط مع تجربة سارية أو اشتراك فعّال.</p></div>
+      <div class="glass"><h3>على كل الأجهزة</h3><p>واجهة عربية RTL تعمل على الهاتف والحاسوب.</p></div>
+    </div>
+  </section>
+
+  <section id="pricing" class="section">
+    <h2 data-site="pricing_title">الاشتراكات</h2>
+    <div class="grid price" id="planGrid">
+      <div class="glass plan">
+        <h3>تجربة مجانية</h3><p class="amount">7 أيام</p>
+        <ul><li>كل الدروس</li><li>الفيديوهات</li><li>ملفات PDF</li><li>دروس HTML التفاعلية</li></ul>
+        <a class="btn ghost" href="register.html">ابدأ التجربة</a>
+      </div>
+      <div class="glass plan featured">
+        <h3>الاشتراك السنوي</h3><p class="amount">2500 DA <small>/ السنة</small></p>
+        <ul><li>سنة كاملة من الوصول</li><li>السنوات الثلاث</li><li>كل المجالات والوحدات</li><li>الدروس الجديدة والتحديثات</li></ul>
+        <a class="btn" href="register.html">اشترك الآن</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 data-site="contact_title">التواصل</h2>
+    <div class="glass contact">
+      <p data-site-row="contact_email" hidden>البريد: <a data-site-email href="#"></a></p>
+      <p data-site-row="contact_phone" hidden>الهاتف: <a data-site-phone dir="ltr" href="#"></a></p>
+      <p class="note" data-site-empty hidden>ستظهر بيانات التواصل هنا بعد أن تضيفها الإدارة.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">© <span id="yr"></span> <span data-site-name>Civil Engineering Academy 3D</span> <span data-site-footer></span></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/three-scene.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/supabase.js"></script>
+<script src="js/site.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
